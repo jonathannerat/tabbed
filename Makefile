@@ -21,9 +21,13 @@ options:
 
 ${OBJ}: config.h config.mk
 
-config.h:
+config.h: theme.h
 	@echo creating $@ from config.def.h
 	@cp config.def.h $@
+
+theme.h:
+	@echo creating $@ from theme.def.h
+	@cp theme.def.h $@
 
 .o:
 	@echo CC -o $@

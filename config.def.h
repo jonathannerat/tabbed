@@ -1,13 +1,14 @@
 /* See LICENSE file for copyright and license details. */
+#include "theme.def.h"
 
 /* appearance */
-static const char font[]        = "monospace:size=9";
-static const char* normbgcolor  = "#222222";
-static const char* normfgcolor  = "#cccccc";
-static const char* selbgcolor   = "#555555";
-static const char* selfgcolor   = "#ffffff";
-static const char* urgbgcolor   = "#111111";
-static const char* urgfgcolor   = "#cc0000";
+static const char font[]        = THEME_FONT;
+static const char* normbgcolor  = THEME_BLACK;
+static const char* normfgcolor  = THEME_WHITE;
+static const char* selbgcolor   = THEME_BRIGHTBLACK;
+static const char* selfgcolor   = THEME_BRIGHTWHITE;
+static const char* urgbgcolor   = THEME_BLACK;
+static const char* urgfgcolor   = THEME_RED;
 static const char before[]      = "<";
 static const char after[]       = ">";
 static const char titletrim[]   = "...";
